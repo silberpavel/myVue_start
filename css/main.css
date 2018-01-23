@@ -1,0 +1,20 @@
+body {
+    background: rgba(128, 128, 128, 0.705);
+}
+
+.grey {
+    background: grey;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.pink {
+    background: pink;
+}
+
+.blue {
+    background: blue;
+}
+

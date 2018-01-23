@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>myVue</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    
+    <div id="app">
+        <!-- <button v-on:click="title='new title'">button</button> -->
+        <!-- @mouseover -->
+        <button @click="changeText">button</button>
+
+        <p> {{ title }} </p>
+        <p v-bind:class="styleCSS">Color (blue/grey/pink/yellow): {{ styleCSS }} </p>
+        <input type="text" v-on:input="styleCSS = $event.target.value">
+        <hr>
+<!-- Example #2 -->
+        <p>Example #2, (alert -> type "25")</p>
+        <input type="text" v-on:input="increment ($event.target.value)">
+        <p>value: {{ value }}</p>
+        <p>doubleValue: {{ doubleValue }}</p>
+        <hr>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
