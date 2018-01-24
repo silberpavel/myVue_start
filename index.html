@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vue.png/215px-Vue.png" alt="" srcset="">
+    
     <div id="app">
         <h3>Event(onClick, mouseOver,...) , variable, button, input</h3>
         <!-- <button v-on:click="title='new title'">button</button> -->
@@ -44,13 +45,27 @@
         <hr>
     </div>
 <!-- Filter -->
-    <div id="filter">
+    <div id="filter"> 
         <h3>Filters</h3>
         <p> {{ msg | lowerCase }}</p>
+        <p> {{ msg2 | lowerCase | capitalize }}</p>
+    </div>
+    <hr>
+
+    <!-- An object -->
+    <div id="car">
+        <!-- Component (global) -->
+        <app-car></app-car>
+    </div>
+
+    <hr>
+    <div id="car2">
+        <app-car2></app-car2>
     </div>
 
     <script src="js/main.js"></script>
     <script src="js/filter.js"></script>
+    <script src="js/cars.js"></script> 
 </body>
 </html>
 

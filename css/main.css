@@ -28,3 +28,25 @@ img {
     width: 100px;
 }
 
+.myCar {
+    width: 30%;
+    margin: 10px 31%;
+    background: #daa9a9;
+    border: 2px solid rgb(48, 48, 48);
+    border-radius: 10px;
+    padding: 1.2% 2%;
+    color: #3c3b3b;
+    font-size: 1.1em;
+}
+
+.myCar2 {
+    width: 30%;
+    margin: 10px 31%;
+    background: #1e9599;
+    border: 2px solid rgb(48, 48, 48);
+    border-radius: 10px;
+    padding: 1.2% 2%;
+    color: #3c3b3b;
+    font-size: 1.1em;
+}
+
