@@ -1,5 +1,5 @@
 body {
-    background: rgba(128, 128, 128, 0.705);
+    background: rgba(99, 98, 98, 0.767);
 }
 
 .grey {
@@ -16,5 +16,10 @@ body {
 
 .blue {
     background: blue;
+}
+
+li {
+    list-style: none;
+    padding: 0px;
 }
 

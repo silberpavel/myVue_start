@@ -3,7 +3,15 @@ var app = new Vue ({
     data: {
         title: "Hello Vue!",
         styleCSS: '',
-        value: 1
+        value: 1,
+        show: true,
+        message: 'Hello VueJS',
+        cars: [
+            {model: "BMW", speed: 258},
+            {model: "Audi", speed: 228},
+            {model: "Mercedes-Benz AMG", speed: 191},
+            {model: "Ford", speed: 188}
+        ]
     },
     methods: {
         changeText () {
@@ -19,6 +27,10 @@ var app = new Vue ({
     computed: {
         doubleValue() {
             return this.value * 2
+        },
+        showMess() {
+            return this.message.toUpperCase();
         }
-    }
+    },
+
 });
